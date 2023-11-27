@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Html element table</title>
         <link href="styles.css" rel="stylesheet">
     </head>
@@ -15,35 +17,35 @@
             <tbody>
                 <tr class="red">
                     <td>Red</td>
-                    <td>hsl(0, 100%, 50%)</td>
+                    <td class="color-code" onclick="copyToClipboard('hsl(0, 100%, 50%)')">hsl(0, 100%, 50%)</td>
                 </tr>
                 <tr class="orange">
                     <td>Orange</td>
-                    <td>hsl(30, 100%, 50%)</td>
+                    <td class="color-code" onclick="copyToClipboard('hsl(30, 100%, 50%)')">hsl(30, 100%, 50%)</td>
                 </tr>
-                <tr class="Yellow">
+                <tr class="yellow">
                     <td>Yellow</td>
-                    <td>Hsl(60, 100%, 50%)</td>
+                    <td class="color-code" onclick="copyToClipboard('hsl(60, 100%, 50%)')">hsl(60, 100%, 50%)</td>
                 </tr>
-                <tr class="Green">
+                <tr class="green">
                     <td>Green</td>
-                    <td>hsl(120, 100%, 50%)</td>
+                    <td class="color-code" onclick="copyToClipboard('hsl(120, 100%, 50%)')">hsl(120, 100%, 50%)</td>
                 </tr>
-                <tr class="Cyan">
+                <tr class="cyan">
                     <td>Cyan</td>
-                    <td>hsl(180, 100%, 50%)</td>
+                    <td class="color-code" onclick="copyToClipboard('hsl(180, 100%, 50%)')">hsl(180, 100%, 50%)</td>
                 </tr>
-                <tr class="Blue">
+                <tr class="blue">
                     <td>Blue</td>
-                    <td>hsl(240, 100%, 50%)</td>
+                    <td class="color-code" onclick="copyToClipboard('hsl(240, 100%, 50%)')">hsl(240, 100%, 50%)</td>
                 </tr>
-                <tr class="Purple">
+                <tr class="purple">
                     <td>Purple</td>
-                    <td>hsl(300, 100%, 50%)</td>
+                    <td class="color-code" onclick="copyToClipboard('hsl(300, 100%, 50%)')">hsl(300, 100%, 50%)</td>
                 </tr>
-                <tr class="Pink">
+                <tr class="pink">
                     <td>Pink</td>
-                    <td>hsl(330, 100%, 75%)</td>
+                    <td class="color-code" onclick="copyToClipboard('hsl(330, 100%, 75%)')">hsl(330, 100%, 75%)</td>
                 </tr>
             </tbody>
         </table>
@@ -56,37 +58,48 @@
             <tbody>
                 <tr class="red">
                     <td>Red</td>
-                    <td>rgb(255, 0, 0)</td>
+                    <td class="color-code" onclick="copyToClipboard('rgb(255, 0, 0)')">rgb(255, 0, 0)</td>
                 </tr>
                 <tr class="orange">
                     <td>Orange</td>
-                    <td>rgb(255, 165, 0)</td>
+                    <td class="color-code" onclick="copyToClipboard('rgb(255, 165, 0)')">rgb(255, 165, 0)</td>
                 </tr>
-                <tr class="Yellow">
+                <tr class="yellow">
                     <td>Yellow</td>
-                    <td>rgb(255, 255, 0)</td>
+                    <td class="color-code" onclick="copyToClipboard('rgb(255, 255, 0)')">rgb(255, 255, 0)</td>
                 </tr>
-                <tr class="Green">
+                <tr class="green">
                     <td>Green</td>
-                    <td>rgb(0, 128, 0)</td>
+                    <td class="color-code" onclick="copyToClipboard('rgb(0, 128, 0)')">rgb(0, 128, 0)</td>
                 </tr>
-                <tr class="Cyan">
+                <tr class="cyan">
                     <td>Cyan</td>
-                    <td>rgb(0, 255, 255)</td>
+                    <td class="color-code" onclick="copyToClipboard('rgb(0, 255, 255)')">rgb(0, 255, 255)</td>
                 </tr>
-                <tr class="Blue">
+                <tr class="blue">
                     <td>Blue</td>
-                    <td>rgb( 0, 0, 255)</td>
+                    <td class="color-code" onclick="copyToClipboard('rgb( 0, 0, 255)')">rgb( 0, 0, 255)</td>
                 </tr>
-                <tr class="Purple">
+                <tr class="purple">
                     <td>Purple</td>
-                    <td>rgb(128, 0, 128)</td>
+                    <td class="color-code" onclick="copyToClipboard('rgb(128, 0, 128)')">rgb(128, 0, 128)</td>
                 </tr>
-                <tr class="Pink">
+                <tr class="pink">
                     <td>Pink</td>
-                    <td>rgb(255, 192, 203)</td>
+                    <td class="color-code" onclick="copyToClipboard('rgb(255, 192, 203)')">rgb(255, 192, 203)</td>
                 </tr>
             </tbody>
         </table>
+        <script>
+            function copyToClipboard(text) {
+              const textarea = document.createElement('textarea');
+              textarea.value = text;
+              document.body.appendChild(textarea);
+              textarea.select();
+              document.execCommand('copy');
+              document.body.removeChild(textarea);
+              alert('Copied to clipboard: ' + text);
+            }
+        </script>
     </body>
 </html>

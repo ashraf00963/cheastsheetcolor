@@ -1,6 +1,8 @@
 body {
     color: hsl(0, 0%, 100%);
-    background-color: hsl(240, 8%, 8%)
+    background-color: hsl(240, 8%, 8%);
+    margin: 0;
+    padding: 0;;
 }
 
 h1 {
@@ -15,12 +17,56 @@ table {
     border: 2px solid hsl(0, 0%, 100%);
     width: 500px;
     margin: 0 auto;
+    padding: 0;
 }
 
 thead{
-    background-color: hsl(0, 0%, 30%);
+    padding: 0;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Add borders to cells */
+    padding: 8px;
+}
+
+th {
+    padding: 0;
+    border-bottom: 1px solid hsl(0, 0%, 100%);
 }
 
 td {
     text-align: center;
+
+}
+
+.red {
+    color: hsl(0, 100%, 50%);
+}
+
+.orange {
+    color: hsl(30, 100%, 50%);
+}
+
+.yellow {
+    color: hsl(60, 100%, 50%);
+}
+
+.green {
+    color: hsl(120, 100%, 50%);
+}
+
+.cyan {
+    color: hsl(180, 100%, 50%);
+}
+
+.blue {
+    color: hsl(240, 100%, 50%);
+}
+
+.purple {
+    color: hsl(300, 100%, 50%);
+}
+
+.pink {
+    color: rgb(255, 192, 203);
 }
