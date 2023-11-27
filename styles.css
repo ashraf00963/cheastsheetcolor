@@ -20,6 +20,13 @@ table {
     padding: 0;
 }
 
+@media only screen and (max-width: 767px) {
+    table {
+        width: 400px;
+        margin: 50px;
+    }
+}
+
 thead{
     padding: 0;
 }
