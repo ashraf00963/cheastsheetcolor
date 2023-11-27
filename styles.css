@@ -1,0 +1,26 @@
+body {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(240, 8%, 8%)
+}
+
+h1 {
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+table {
+    border: 2px solid hsl(0, 0%, 100%);
+    width: 500px;
+    margin: 0 auto;
+}
+
+thead{
+    background-color: hsl(0, 0%, 30%);
+}
+
+td {
+    text-align: center;
+}
